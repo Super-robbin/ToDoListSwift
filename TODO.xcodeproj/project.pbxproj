@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1866202ACD67F700AC4D14 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18661F2ACD67F700AC4D14 /* ItemModel.swift */; };
 		DD59F2672ACC230D00B27AF5 /* TODOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2662ACC230D00B27AF5 /* TODOApp.swift */; };
 		DD59F2692ACC230D00B27AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2682ACC230D00B27AF5 /* ContentView.swift */; };
 		DD59F26B2ACC231100B27AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD59F26A2ACC231100B27AF5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		DD59F2792ACC231100B27AF5 /* TODOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2782ACC231100B27AF5 /* TODOTests.swift */; };
 		DD59F2832ACC231100B27AF5 /* TODOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2822ACC231100B27AF5 /* TODOUITests.swift */; };
 		DD59F2852ACC231100B27AF5 /* TODOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2842ACC231100B27AF5 /* TODOUITestsLaunchTests.swift */; };
+		DD59F2922ACC5EA500B27AF5 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59F2912ACC5EA500B27AF5 /* ListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD18661F2ACD67F700AC4D14 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		DD59F2632ACC230D00B27AF5 /* TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD59F2662ACC230D00B27AF5 /* TODOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOApp.swift; sourceTree = "<group>"; };
 		DD59F2682ACC230D00B27AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		DD59F27E2ACC231100B27AF5 /* TODOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD59F2822ACC231100B27AF5 /* TODOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOUITests.swift; sourceTree = "<group>"; };
 		DD59F2842ACC231100B27AF5 /* TODOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD59F2912ACC5EA500B27AF5 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD18661D2ACD67A700AC4D14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD59F2682ACC230D00B27AF5 /* ContentView.swift */,
+				DD59F2912ACC5EA500B27AF5 /* ListRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD18661E2ACD67B100AC4D14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD18661F2ACD67F700AC4D14 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DD59F25A2ACC230D00B27AF5 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +116,9 @@
 		DD59F2652ACC230D00B27AF5 /* TODO */ = {
 			isa = PBXGroup;
 			children = (
+				DD18661E2ACD67B100AC4D14 /* Models */,
+				DD18661D2ACD67A700AC4D14 /* Views */,
 				DD59F2662ACC230D00B27AF5 /* TODOApp.swift */,
-				DD59F2682ACC230D00B27AF5 /* ContentView.swift */,
 				DD59F26A2ACC231100B27AF5 /* Assets.xcassets */,
 				DD59F26C2ACC231100B27AF5 /* TODO.entitlements */,
 				DD59F26D2ACC231100B27AF5 /* Preview Content */,
@@ -261,6 +283,8 @@
 			files = (
 				DD59F2692ACC230D00B27AF5 /* ContentView.swift in Sources */,
 				DD59F2672ACC230D00B27AF5 /* TODOApp.swift in Sources */,
+				DD1866202ACD67F700AC4D14 /* ItemModel.swift in Sources */,
+				DD59F2922ACC5EA500B27AF5 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
